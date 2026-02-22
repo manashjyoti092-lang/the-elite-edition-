@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteStep | Private Collection</title>
+    <style>
+        /* Premium Dark Theme */
+        body { margin: 0; background-color: #0a0a0a; color: #ffffff; font-family: 'Inter', sans-serif; }
+        header { padding: 80px 20px; text-align: center; border-bottom: 1px solid #222; }
+        h1 { font-size: 3rem; letter-spacing: 8px; font-weight: 200; margin: 0; text-transform: uppercase; }
+        p.subtitle { color: #888; letter-spacing: 3px; font-size: 0.9rem; margin-top: 10px; }
+
+        .container { max-width: 1400px; margin: 60px auto; padding: 0 40px; }
+        
+        .shoe-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 50px; 
+        }
+
+        .shoe-card { 
+            background: #111; 
+            border: 1px solid #1a1a1a;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shoe-card:hover { 
+            transform: translateY(-10px);
+            border-color: #444;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .shoe-card img { 
+            width: 100%; 
+            height: 400px; 
+            object-fit: cover; 
+            filter: grayscale(20%);
+            transition: 0.4s;
+        }
+
+        .shoe-card:hover img { filter: grayscale(0%); scale: 1.05; }
+
+        .info { padding: 25px; text-align: left; }
+        .info h3 { margin: 0; font-weight: 400; font-size: 1.4rem; letter-spacing: 1px; }
+        .price { color: #aaa; margin-top: 10px; font-size: 1.1rem; }
+        
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            background: #fff;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ELITESTEP</h1>
+    <p class="subtitle">THE ATELIER COLLECTION</p>
+</header>
+
+<div class="container">
+    <div class="shoe-grid">
+
+        <div class="shoe-card">
+            <img src="pexels-avonnephoto-3916017.jpg" alt="Shoe 1">
+            <div class="info">
+                <h3>Vanguard Runner</h3>
+                <div class="price">$180.00</div>
+                <a href="#" class="buy-btn">Inquire Now</a>
+            </div>
+        </div>
+
+        <div class="shoe-card">
+            <img src="pexels-bellazhong-3782789.jpg" alt="Shoe 2">
+            <div class="info">
+                <h3>Midnight Essence</h3>
+                <div class="price">$210.00</div>
+                <a href="#" class="buy-btn">Inquire Now</a>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+</body>
+</html>
